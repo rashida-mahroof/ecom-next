@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Add more custom classes as needed */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background: #e6e5e5;
+  --primary-color: #6b0500;
+  --secondary-color: #181717;
+  --on-primary: #ffff;
+  --on-secondary: #ffff;
+  --tertiary-color : #fb6e04;
+  --on-tertiary: #222121;
+  --hash-color:#4c7a83;
+  --color-flame: #FF6600;
+  --color-ember: #FF3300;
+  --color-ash: #A9A9A9;
+  --color-charcoal: #36454F;
+  --color-smoke: #eeecec;
+
+}
+body {
+  scroll-behavior: smooth;
+  font-size: 13px;
+  background-image: url(../app/assets/bg.avif);
+  background-size: cover;
+  /* background-color: var(--color-smoke); */
+  color: var(--color-charcoal);
+  
+}
+
+.btn-primary {
+  @apply bg-[var(--color-flame)] text-white font-bold py-2 px-4 rounded hover:bg-[var(--color-ember)] transition-colors duration-300;
+}
+.slick-prev:before, .slick-next:before {
+  color: var(--color-ash) !important;
+}
+.section-title {
+  @apply text-3xl font-bold text-center mb-8 text-[var(--color-charcoal)];
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.color-primary{
+  color: var(--primary-color);
+}
+
+
+.quicksand{
+  font-family: var(--font-quicksand);
+}
+.maven{
+  font-family: var(--font-maven-pro);
+}
